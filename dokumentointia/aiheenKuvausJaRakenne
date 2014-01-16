@@ -1,0 +1,19 @@
+Aihe: DateEscape
+
+Peli, jossa pelin päähenkilön on tarkoitus paeta treffeiltä 
+mahdollisimman nopeasti. Peli on vuoropohjainen. Jokainen toiminto 
+kuluttaa pelaajan jäljelläolevaa aikaa. Ajan loppuessa neito jonka 
+kanssa hän on treffeillä raahaa hänet kotiluolaansa. Pelaajan tulee 
+käyttää aikaansa tehokkaasti, ja joko saada neitokainen menettämään 
+hänen mielenkiintonsa pelaajahahmoa kohtaan, tai hahmon on toteutettava 
+pakosuunnitelma, päästäkseen pakoon julmaa kohtaloa. Pelissä on 
+graaffinen käyttöliittymä.
+
+Käyttäjät: Pelaaja
+
+Pelaajan toiminnot: Voi valita eri ruudulla näkyvistä 
+toiminnoista. Eri toiminnot kuluttavat eri määrän aikaa, ja antavat 
+erikaltaisia palkintoja.
+
+Alustavasti: Keksi puheenaihe, leiki ruualla, viereisen pöydän 
+lihakimpaleelle uhittelu.
