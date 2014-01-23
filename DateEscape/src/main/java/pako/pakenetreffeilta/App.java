@@ -1,9 +1,6 @@
-package com.mycompany.pakenetreffeilta;
+package pako.pakenetreffeilta;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
