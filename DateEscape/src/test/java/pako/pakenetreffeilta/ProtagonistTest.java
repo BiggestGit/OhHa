@@ -16,7 +16,7 @@ public class ProtagonistTest {
     
     @Before
     public void setUp() {
-        testSubject = new Protagonist("Paavo Pesusieni", true);
+        testSubject = new Protagonist("Paavo Pesusieni");
     }
     
     @After
@@ -31,11 +31,5 @@ public class ProtagonistTest {
     @Test
     public void protagonistOccupiesSpaceTrue(){
         assertTrue(testSubject.occupiesSpace());
-    }
-    
-    @Test
-    public void protagonistOccupiesSpaceFalse(){
-        Protagonist lampface = new Protagonist("The Mighty Lampface", false);
-        assertFalse(lampface.occupiesSpace());
     }
 }
