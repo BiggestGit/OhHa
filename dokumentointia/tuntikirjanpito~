@@ -18,4 +18,10 @@ Pisteet kotiin :D No jooh, tänään tein luokat Girl ja Interest. Nyt
 pelimekaniikka alkaa vihdoinkin hiukan hahmottua päässäni. Ehkä
 saan vielä projektin jonain päivänä valmiiksi. Testejäkin on nyt
 muutama enemmän. Poistin muutaman turhan. Liikkumislogiikka alkaa
-hiukan riistäytyä käsistä, mutta mietin sitä ensi viikolla :D
+hiukan riistäytyä käsistä, mutta eiköhän se pienellä hiomisella taas
+palaa aisoihin :)
+
+31.1 [Muistutus itselle] kun World-luokka hakee tietystä 
+koordinaatista oliota voi palauttaa nullin, mieti haluatko luoda
+erillisen NullObject-luokan (GameObject alisteinen luokka), saattaa
+tehdä ohjelmasta vakaamman ja helpomman käsitellä.

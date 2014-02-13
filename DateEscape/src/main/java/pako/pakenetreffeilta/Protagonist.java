@@ -5,9 +5,5 @@ public class Protagonist extends GameObject {
     public Protagonist(String name) {
         super(name, true);
     }
-
-    public void moveToXY(){
-        
-    }
     
 }

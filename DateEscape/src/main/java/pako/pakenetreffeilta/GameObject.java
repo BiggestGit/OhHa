@@ -19,4 +19,8 @@ package pako.pakenetreffeilta;
      public boolean occupiesSpace(){
          return this.collision;
      }
+     
+     public void moveToXY(){
+        
+    }
 }
