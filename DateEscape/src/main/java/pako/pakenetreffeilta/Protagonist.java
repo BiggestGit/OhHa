@@ -6,4 +6,6 @@ public class Protagonist extends GameObject {
         super(name, true);
     }
     
+    
+    
 }
