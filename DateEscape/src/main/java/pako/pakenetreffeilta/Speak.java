@@ -31,10 +31,10 @@ public class Speak {
             reaction = 5 + rand.nextInt(scaleOfReaction - 4);
         }
         if (isNegative) {
-            girl.decreaseInterestWithConsequence(reaction);
+            girl.decreaseInterestRegularConsequence(reaction);
         }
         else{
-            girl.increaseInterestWithConsequence(reaction);
+            girl.increaseInterestRegularConsequence(reaction);
         }
     }
 }

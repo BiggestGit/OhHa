@@ -20,6 +20,8 @@ import static org.junit.Assert.*;
 public class GirlTest {
     
     public Girl testing;
+    public Reaction sadreaction;
+    public Reaction happyreaction;
     
     public GirlTest() {
     }
@@ -27,6 +29,8 @@ public class GirlTest {
     @Before
     public void setUp() {
         testing = new Girl("Paavo Pesusieni");
+        sadreaction = Reaction.SAD;
+        happyreaction = Reaction.HAPPY;
     }
     
     @After
@@ -40,22 +44,22 @@ public class GirlTest {
     
     @Test
     public void girlsInterestDecreasesAccordingly(){
-        testing.decreaseInterestSansConsequence(50);
+        testing.decreaseInterestSpecialConsequence(50, sadreaction);
         assertEquals(50, testing.getGirlsInterestAmount());
     }
     @Test
     public void girlsInterestIncreasesAccordingly(){
-        testing.increaseInterestSansConsequence(50);
+        testing.increaseInterestSpecialConsequence(50, happyreaction);
         assertEquals(150, testing.getGirlsInterestAmount());
     }
     @Test
     public void girlsInterestIncreasesAccordinglyWithoutExceedingLimit(){
-        testing.increaseInterestSansConsequence(150);
+        testing.increaseInterestRegularConsequence(150);
         assertEquals(200, testing.getGirlsInterestAmount());
     }
     @Test
     public void girlsInterestDecreasesAccordinglyWithoutGoingBelow0(){
-        testing.decreaseInterestSansConsequence(150);
+        testing.decreaseInterestRegularConsequence(150);
         assertEquals(0, testing.getGirlsInterestAmount());
     }
 
