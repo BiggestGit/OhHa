@@ -7,21 +7,21 @@ public class Girl extends GameObject {
 
     private Interest personalinterest;
     private Reaction reaction;
-    private boolean negativeoutcome;
-    private boolean positiveoutcome;
+    private Ending negativeoutcome;
+    private Ending positiveoutcome;
 
     public Girl(Interest personalinterest, String name) {
         super(name, true);
         this.personalinterest = personalinterest;
-        this.negativeoutcome = false;
-        this.positiveoutcome = false;
+        this.negativeoutcome = Ending.NEGATIVEENDING;
+        this.positiveoutcome = Ending.POSITIVEENDING;
     }
 
     public Girl(String name) {
         super(name, true);
         this.personalinterest = new Interest(100, 200);
-        this.negativeoutcome = false;
-        this.positiveoutcome = false;
+        this.negativeoutcome = Ending.NEGATIVEENDING;
+        this.positiveoutcome = Ending.POSITIVEENDING;
     }
 
     public void depositReaction() {
@@ -38,7 +38,9 @@ public class Girl extends GameObject {
             reaction.tellItLikeItIs();
         }
         this.personalinterest.decreaseInterest(amountdecreased);
-        this.negativeoutcome = this.personalinterest.checkForLowInterest();
+        if (this.personalinterest.checkForLowInterest()) {
+            negativeoutcome.showEnding();
+        }
     }
 
     public void decreaseInterestSpecialConsequence(int amountdecreased, Reaction reaction) {
